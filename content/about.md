@@ -36,7 +36,7 @@ Alla base di tutto c’è la voglia di **creare**, di **essere indipendente**, d
 
 ### Oltre lo Schermo
 
-E quando stacco da PC, strategie e grafici? C’è la **Musica**. È la base, una costante fondamentale. Ho iniziato (senza nessuna esperienza) a suonare il basso in una band al liceo, continuando poi a suonare in nuove band, iniziare nuovi progetti e sperimentare nuovi generi, registrando anche demo. Mi affascina il mondo della produzione, specialmente elettronica. Un percorso che spero di approfondire presto. 
+E quando stacco da PC, strategie e grafici? C’è la **Musica**. È la base, una costante fondamentale. Ho iniziato (senza nessuna esperienza) a suonare il basso in una band al liceo, continuando poi a suonare in nuove band, iniziare nuovi progetti e sperimentare nuovi generi, registrando anche demo, album ed EP. Mi affascina il mondo della produzione, specialmente elettronica. Un percorso che spero di approfondire presto. 
 
 Dato che per me la musica che ascolta una persona dice molto su di essa, nel bottoncino sotto o qui potete trovare il mio profilo [**Spotify**](https://open.spotify.com/user/8231spvupmlhz640983icnslg)
 
