@@ -22,6 +22,7 @@ jobs:
         with:
           hugo-version: '0.141.0' # Versione di Hugo (puoi cambiarla se serve)
           extended: true # Versione Extended necessaria per il tema Paige
+          install-dart-sass: true
           
       # NUOVO PASSO: Installa Node.js (necessario per npm)
       - name: Setup Node.js for Dart Sass
