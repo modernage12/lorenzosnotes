@@ -1,0 +1,56 @@
+baseURL = 'https://modernage12.github.io/lorenzosnotes/'
+languageCode = 'it-it'
+title = "Lorenzo's Notes"
+theme = "paige"
+[params.paige.site]
+  color_scheme = "dark"
+  disable_credit = true
+  menu_style = "underline"
+  disable_copyright = true 
+  disable_license = true
+  
+[params.paige]
+  style = """
+  #paige-page-content,
+  #paige-page-pages > * {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 40rem; # Limita la larghezza massima a circa 65-70 caratteri
+  }
+  """
+  
+[menu]
+  [[menu.main]]
+    identifier = "home"    # Identificatore unico per questa voce
+    name = "Home"          # Testo che appare nel menu
+    url = "/"              # Link a cui punta (la homepage)
+    weight = 10            # Ordine nel menu (numeri bassi prima)
+
+  [[menu.main]]
+    identifier = "progetti"
+    name = "Progetti"
+    url = "/progetti/"     # Link alla sezione progetti
+    weight = 20
+
+  [[menu.main]]
+    identifier = "chi-sono" # O chiamalo 'about' se preferisci
+    name = "Chi Sono"
+    url = "/about/"        # Link alla pagina about (verifica che l'URL sia giusto)
+    weight = 30
+  [[menu.main]]
+	identifier = "contatti"
+	name = "Contatti"
+	url = "/contatti/"
+	weight = 40 # Mettilo come ultimo, dopo "Chi Sono"
+	
+  [[menu.main]]
+	identifier = "blog"
+	name = "Blog"
+	url = "/blog/"
+	weight = 50 # Assicurati che sia un peso maggiore degli altri
+
+[params.paige.subpages]
+  disable_date = true         # Nasconde la data nelle liste
+  disable_word_count = true   # Nasconde il conteggio parole nelle liste
+  disable_reading_time = true # Nasconde il tempo di lettura nelle liste
+  disable_keywords = true
