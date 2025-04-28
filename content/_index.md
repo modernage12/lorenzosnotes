@@ -17,7 +17,7 @@ L'obiettivo è creare un ritratto più completo di me, che vada oltre un semplic
 
 **Da dove iniziare?**
 
-* Dai un'occhiata ai miei **[Progetti](/progetti/)** per vedere cosa sto costruendo.
-* Scopri qualcosa in più su **[Chi Sono](/about/)**.
+* Dai un'occhiata ai miei **[Progetti](lorenzosnotes/progetti/)** per vedere cosa sto costruendo.
+* Scopri qualcosa in più su **[Chi Sono](lorenzosnotes/about/)**.
 
 Usa pure il menu in alto per navigare nelle diverse sezioni. Buona esplorazione!

@@ -26,13 +26,13 @@ Mi appassiona applicare un **approccio data-driven** e sperimentare con l'**AI**
 
 La mia filosofia è “Ok, bello… **ma se provassimo a fare così?**”. Questa spinta mi porta a esplorare e costruire continuamente. Al momento i miei focus principali sono:
 
-* **AMPHI:** Sto lavorando a [**AMPHI**](/progetti/amphi/), una piattaforma di **ticketing NFT su blockchain**. L’idea è di usare la tecnologia per contrastare bot e secondary ticketing, dando più potere, trasparenza e valore ad artisti e fan. Una sfida complessa ma affascinante. *(Ne parlo meglio nella sezione Progetti)*.
+* **AMPHI:** Sto lavorando a [**AMPHI**](lorenzosnotes/progetti/amphi/), una piattaforma di **ticketing NFT su blockchain**. L’idea è di usare la tecnologia per contrastare bot e secondary ticketing, dando più potere, trasparenza e valore ad artisti e fan. Una sfida complessa ma affascinante. *(Ne parlo meglio nella sezione Progetti)*.
 * **Trading:** Un interesse nato ai tempi dell’università e che coltivo da autodidatta. Sto affinando la mia strategia con l’obiettivo di superare le challenge delle prop firm e raggiungere l’**indipendenza come trader professionista**.
 * **Marketing sul Campo:** L’obiettivo è fare esperienza diretta nel marketing operativo (idealmente nel performance/advertising), con il sogno nel cassetto di **aprire un’agenzia**.
 
 ### Il “Metodo”: Creatività Pragmatica
 
-Alla base di tutto c’è la voglia di **creare**, di **essere indipendente**, di scoprire, sperimentare e mettere in dubbio. **`Questa attitudine si è concretizzata in passato in progetti come community radio digitali ed esperimenti e-commerce, e continua oggi con le sfide di AMPHI e non solo (trovi diversi esempi tra i miei`** [**Progetti**](/progetti/)**`)`**. Mi definisco un **creativo**, ma con i piedi per terra: mi piace pensare fuori dagli schemi, ma anche analizzare i risultati e far funzionare le cose (il lato pragmatico!). E non mollo facilmente.
+Alla base di tutto c’è la voglia di **creare**, di **essere indipendente**, di scoprire, sperimentare e mettere in dubbio. **`Questa attitudine si è concretizzata in passato in progetti come community radio digitali ed esperimenti e-commerce, e continua oggi con le sfide di AMPHI e non solo (trovi diversi esempi tra i miei`** [**Progetti**](lorenzosnotes/progetti/) **`)`**. Mi definisco un **creativo**, ma con i piedi per terra: mi piace pensare fuori dagli schemi, ma anche analizzare i risultati e far funzionare le cose (il lato pragmatico!). E non mollo facilmente.
 
 ### Oltre lo Schermo
 
@@ -46,6 +46,6 @@ Dato che per me la musica che ascolta una persona dice molto su di essa, nel bot
 
 Spero questa introduzione ti abbia dato un’idea più chiara di chi sono e cosa faccio. Se vuoi saperne di più:
 
-* Dai un’occhiata ai miei [**Progetti**](/progetti/)
-* Leggi qualche articolo (quando inizierò a pubblicarli!) sul [**Blog**](/blog/)
-* Mettiamoci in contatto tramite la pagina [**Contatti**](/contatti/) o direttamente su [**LinkedIn**](https://www.linkedin.com/in/lorenzo-caputo1202/)
+* Dai un’occhiata ai miei [**Progetti**](lorenzosnotes/progetti/)
+* Leggi qualche articolo (quando inizierò a pubblicarli!) sul [**Blog**](lorenzosnotes/blog/)
+* Mettiamoci in contatto tramite la pagina [**Contatti**](lorenzosnotes/contatti/) o direttamente su [**LinkedIn**](https://www.linkedin.com/in/lorenzo-caputo1202/)
