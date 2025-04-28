@@ -1,72 +1,37 @@
-# Workflow per costruire e pubblicare un sito Hugo su GitHub Pages
-name: Deploy Hugo site to Pages
+name: Deploy Hugo site via gh-pages
 
 on:
-  # Eseguito quando fai push sul branch 'master'
   push:
     branches:
-      - master # Abbiamo cambiato da 'main' a 'master'
+      - master # Il tuo branch principale
 
-  # Permette di eseguirlo manualmente dalla tab Actions di GitHub
   workflow_dispatch:
 
-# Imposta i permessi necessari per il token GITHUB_TOKEN
-permissions:
-  contents: read
-  pages: write
-  id-token: write
-
-# Permetti un solo deployment concorrente
-concurrency:
-  group: "pages"
-  cancel-in-progress: false
-
-# Usa bash di default
-defaults:
-  run:
-    shell: bash
-
 jobs:
-  # Job per costruire il sito
-  build:
-    runs-on: ubuntu-latest # Esegue su un server Linux virtuale
-    env:
-      HUGO_VERSION: 0.119.0 # Puoi usare una versione più recente se necessario
-    steps:
-      - name: Installa Hugo CLI (Extended)
-        # Scarica la versione Extended di Hugo specificata sopra
-        run: |
-          wget -O ${{ runner.temp }}/hugo.deb https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_linux-amd64.deb \
-          && sudo dpkg -i ${{ runner.temp }}/hugo.deb
-      - name: Checkout del codice
-        uses: actions/checkout@v4 # Azione standard per scaricare il codice
-        with:
-          submodules: recursive # Importante: Scarica anche il tema (submodule)
-          fetch-depth: 0 # Scarica tutta la storia per GitInfo
-      - name: Imposta GitHub Pages
-        id: pages
-        uses: actions/configure-pages@v5 # Azione standard per configurare Pages
-      - name: Costruisci il sito con Hugo
-        env:
-          HUGO_ENVIRONMENT: production
-          HUGO_ENV: production
-        # Costruisce il sito nella cartella /public usando il baseURL di GitHub Pages
-        # e minimizzando i file
-        run: |
-          hugo --minify --baseURL "${{ steps.pages.outputs.base_url }}/" 
-      - name: Carica l'artifact (la cartella public)
-        uses: actions/upload-pages-artifact@v3 # Azione per caricare il sito costruito
-        with:
-          path: ./public # Specifica la cartella da caricare
-
-  # Job per pubblicare il sito
   deploy:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }} # URL del sito pubblicato
     runs-on: ubuntu-latest
-    needs: build # Esegui solo dopo che il job 'build' è completato
     steps:
-      - name: Pubblica su GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4 # Azione standard per pubblicare l'artifact
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          submodules: recursive  # Scarica il tema
+          fetch-depth: 0        # Scarica la storia per GitInfo
+
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v3 # Azione per installare Hugo
+        with:
+          hugo-version: '0.119.0' # Versione di Hugo (puoi cambiarla se serve)
+          extended: true # Versione Extended necessaria per il tema Paige
+
+      - name: Build Sito
+        run: hugo --minify # Costruisce il sito nella cartella /public
+
+      - name: Deploy su branch gh-pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }} # Token automatico per permettere il push
+          publish_dir: ./public # Cartella da pubblicare
+          # publish_branch: gh-pages # Nome del branch di destinazione (default)
+          # user_name: 'github-actions[bot]' # Nome commit (opzionale)
+          # user_email: 'github-actions[bot]@users.noreply.github.com' # Email commit (opzionale)
+          # commit_message: ${{ github.event.head_commit.message }} # Messaggio commit (opzionale)
