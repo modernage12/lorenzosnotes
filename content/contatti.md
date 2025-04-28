@@ -22,4 +22,4 @@ Puoi trovarmi anche su [**LinkedIn**](https://www.linkedin.com/in/lorenzo-caputo
 
 Se desideri una copia del mio CV aggiornato, puoi scaricarla qui:
 
-<a href="/files/Lorenzo_Caputo_Digital_Marketing_Specialist.pdf" target="_blank" rel="noopener noreferrer"><strong>Scarica il mio CV (PDF)</strong></a>
+[**Scarica il mio CV (PDF)**](/lorenzosnotes/files/Lorenzo_Caputo_Digital_Marketing_Specialist.pdf)
