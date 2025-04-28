@@ -2,7 +2,6 @@ baseURL = 'https://modernage12.github.io/lorenzosnotes/'
 languageCode = 'it-it'
 title = "Lorenzo's Notes"
 theme = "paige"
-googleAnalytics = "G-SLF8V3Z9VM"
 [params.paige.site]
   color_scheme = "dark"
   disable_credit = true
