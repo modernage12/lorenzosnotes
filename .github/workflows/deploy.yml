@@ -20,7 +20,7 @@ jobs:
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v3 # Azione per installare Hugo
         with:
-          hugo-version: '0.119.0' # Versione di Hugo (puoi cambiarla se serve)
+          hugo-version: '0.141.0' # Versione di Hugo (puoi cambiarla se serve)
           extended: true # Versione Extended necessaria per il tema Paige
 
       - name: Build Sito
