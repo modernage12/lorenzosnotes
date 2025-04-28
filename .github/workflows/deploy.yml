@@ -20,33 +20,21 @@ jobs:
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v3 # Azione per installare Hugo
         with:
-          hugo-version: '0.141.0' # Versione di Hugo (puoi cambiarla se serve)
-          extended: true # Versione Extended necessaria per il tema Paige
-          install-dart-sass: true
-          
-      # NUOVO PASSO: Installa Node.js (necessario per npm)
-      - name: Setup Node.js for Dart Sass
-        uses: actions/setup-node@v4
-        with:
-          node-version: '18' # Usiamo una versione LTS recente di Node.js
+          hugo-version: '0.141.0' # Versione di Hugo
+          extended: true # Versione Extended
+          install-dart-sass: true # Installa Dart Sass automaticamente
 
-      # NUOVO PASSO: Installa Dart Sass globalmente con npm
-      - name: Install Dart Sass
-        run: npm install -g sass
-
-      # Il passo successivo rimane invariato
-      - name: Build Sito
-        run: hugo --minify
+      # I passi per Node.js e 'npm install -g sass' sono stati RIMOSSI
 
       - name: Build Sito
-        run: hugo --minify # Costruisce il sito nella cartella /public
+        run: hugo --minify # Un solo passo di build è sufficiente
 
       - name: Deploy su branch gh-pages
         uses: peaceiris/actions-gh-pages@v4
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }} # Token automatico per permettere il push
+          github_token: ${{ secrets.GITHUB_TOKEN }} # Token automatico
           publish_dir: ./public # Cartella da pubblicare
-          # publish_branch: gh-pages # Nome del branch di destinazione (default)
-          # user_name: 'github-actions[bot]' # Nome commit (opzionale)
-          # user_email: 'github-actions[bot]@users.noreply.github.com' # Email commit (opzionale)
-          # commit_message: ${{ github.event.head_commit.message }} # Messaggio commit (opzionale)
+          # Puoi decommentare (togliere #) e modificare le righe seguenti se vuoi personalizzare il commit sul branch gh-pages
+          # user_name: 'github-actions[bot]'
+          # user_email: 'github-actions[bot]@users.noreply.github.com'
+          # commit_message: ${{ github.event.head_commit.message }}
