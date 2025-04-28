@@ -1,32 +1,44 @@
 +++
-date = '2025-04-27T13:59:11+02:00'
+title = "Sito Personale con Framework Hugo" # O aggiorna se vuoi
+date = 2025-04-27T13:55:00+02:00 # Data iniziale o aggiornata
 draft = false
-tags = ["Hugo", "Sito Web", "Portfolio", "Apprendimento"]
-title = 'Sito personale con framework Hugo'
+weight = 50 # O il peso che preferisci per l'ordine
+tags = ["Hugo", "Sito Web", "Portfolio", "GitHub Pages", "GitHub Actions", "Paige Theme", "Static Site"]
+# Nascondiamo i metadati/etc per coerenza
 [paige.pages]
-  disable_keywords = true       # Nasconde l'elenco dei tag sotto il titolo
-  disable_date = true           # Nasconde la data
-  disable_word_count = true   # Nasconde il conteggio parole
-  disable_reading_time = true # Nasconde il tempo di lettura
-  disable_toc = true           # Nasconde l'indice automatico (ToC)
+  disable_keywords = true
+  disable_date = true
+  disable_word_count = true
+  disable_reading_time = true
+  disable_toc = true
 +++
-Questo è il progetto di creazione del mio sito/portfolio personale utilizzando **Hugo** e il tema **Paige**.
+
+Questo è il progetto di creazione e sviluppo continuo del mio sito/portfolio personale, lo spazio digitale in cui ti trovi ora! È stato costruito utilizzando il generatore di siti statici **Hugo** e il tema **Paige**.
 
 ### Obiettivo:
-Creare uno spazio online per presentarmi in modo più completo rispetto a un CV tradizionale, mostrando esperienze, progetti personali e interessi.
+Creare uno spazio online per presentarmi in modo più completo rispetto a un CV tradizionale, mostrando esperienze lavorative e formative, progetti personali, interessi e competenze in modo dinamico e autentico.
 
-### Tecnologie Utilizzate:
-* Generatore di Siti Statici: **Hugo** (versione Extended)
-* Tema: **Paige**
-* Linguaggio di Contenuto: **Markdown**
-* Hosting (previsto): **GitHub Pages**
-* Controllo Versione: **Git**
+### Tecnologie e Strumenti Utilizzati:
+* **Generatore Sito Statico:** Hugo (v0.141.0 Extended)
+* **Tema:** Paige (integrato come Git Submodule)
+* **Linguaggio Contenuti:** Markdown con Front Matter TOML
+* **Hosting:** GitHub Pages (configurato per deployment gratuito)
+* **Deployment Automatico:** GitHub Actions (workflow custom con `peaceiris/actions-gh-pages` per build e push su branch `gh-pages`)
+* **Dipendenze Build:** Dart Sass (installato nel workflow Actions per compilare SCSS del tema)
+* **Controllo Versione:** Git e GitHub
 
-### Cosa ho Imparato (finora):
-* Come installare e configurare Hugo.
-* La struttura base di un sito Hugo (cartelle `content`, `themes`, file `hugo.toml`).
-* Come creare e modificare contenuti in Markdown con Front Matter.
-* Come installare e usare un tema (Paige) tramite `git submodule`.
-* L'uso del server di sviluppo locale di Hugo.
+### Cosa ho Imparato e Sfide Superate:
+Questo progetto è stato un'ottima palestra per approfondire diversi aspetti dello sviluppo web e del workflow moderno:
+* **Configurazione Avanzata di Hugo:** Gestione di `hugo.toml`, `baseURL`, parametri del tema (`[params.paige]`, `[params.paige.site]`, `[params.paige.subpages]`), menu personalizzato, gestione `weight` per ordinamento.
+* **Gestione Contenuti:** Strutturazione in sezioni (`content/`), uso di `_index.md`, personalizzazione Front Matter per singole pagine e sezioni (es. nascondere metadati/ToC).
+* **Personalizzazione Tema:** Override di partials del tema (es. `head.html` per GA, `site-footer-last.html` per link social) per inserire funzionalità custom mantenendo aggiornabile il tema principale.
+* **Gestione Asset Statici:** Utilizzo della cartella `static` per file come il CV PDF.
+* **Deployment Automatizzato:** Configurazione e **debug approfondito** di GitHub Actions, sperimentando diversi workflow (`actions/deploy-pages` vs `peaceiris/actions-gh-pages`), gestendo permessi (`contents: write`) e risolvendo dipendenze di build nell'ambiente Actions (versioni Hugo, installazione Dart Sass).
+* **Integrazioni Esterne:** Aggiunta manuale dello snippet Google Analytics (GA4).
+* **Problem Solving:** Affrontare e risolvere errori 404 (link errati, deployment non completato), errori di build (incompatibilità Hugo/Tema, dipendenze Sass), errori di permessi su GitHub Actions.
+* **Utilizzo Base HTML/CSS:** Inserimento di HTML inline (link CV, icone social) e stili base tramite parametri del tema.
 
-*(Questa sezione verrà aggiornata man mano che il progetto prosegue...)*
+### Stato Attuale:
+Il sito è **attualmente online** su GitHub Pages e viene aggiornato automaticamente ad ogni `push` sul branch `master` del repository GitHub. È in continua evoluzione con l'aggiunta di nuovi contenuti e progetti.
+
+*(Link al Repository: [github.com/modernage12/lorenzosnotes](https://github.com/modernage12/lorenzosnotes))*
