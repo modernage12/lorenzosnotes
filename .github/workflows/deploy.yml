@@ -4,8 +4,11 @@ on:
   push:
     branches:
       - master # Il tuo branch principale
-
   workflow_dispatch:
+
+# Permessi necessari per l'azione actions-gh-pages
+permissions:
+  contents: write
 
 jobs:
   deploy:
@@ -22,31 +25,28 @@ jobs:
         with:
           hugo-version: '0.141.0' # Versione di Hugo
           extended: true # Versione Extended
-      
-      # NUOVI PASSI PER INSTALLARE DART SASS DIRETTAMENTE
+          # La riga 'install-dart-sass: true' è stata rimossa perché non valida qui
+
+      # Passi per installare Dart Sass direttamente
       - name: Install Dart Sass
         run: |
-          SASS_VERSION=1.77.8 # Usiamo una versione recente specifica
-          # Scarica il pacchetto per Linux x64
+          SASS_VERSION=1.77.8 # Versione specifica di Dart Sass
           wget -O dart-sass.tar.gz https://github.com/sass/dart-sass/releases/download/${SASS_VERSION}/dart-sass-${SASS_VERSION}-linux-x64.tar.gz
-          # Estrai l'archivio
           tar -xf dart-sass.tar.gz
-          # Rimuovi l'archivio scaricato
           rm dart-sass.tar.gz
-          # Aggiungi la cartella estratta (che contiene l'eseguibile 'sass') al PATH
-          echo "${PWD}/dart-sass" >> $GITHUB_PATH
+          echo "${PWD}/dart-sass" >> $GITHUB_PATH # Aggiunge sass al PATH
 
-      # I passi per Node.js e 'npm install -g sass' sono stati RIMOSSI
-
+      # Un solo passo di Build
       - name: Build Sito
-        run: hugo --minify # Un solo passo di build è sufficiente
+        run: hugo --minify
 
+      # Passo per il Deploy sul branch gh-pages
       - name: Deploy su branch gh-pages
         uses: peaceiris/actions-gh-pages@v4
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }} # Token automatico
+          github_token: ${{ secrets.GITHUB_TOKEN }} # Usa il token di GitHub Actions
           publish_dir: ./public # Cartella da pubblicare
-          # Puoi decommentare (togliere #) e modificare le righe seguenti se vuoi personalizzare il commit sul branch gh-pages
+          # Le righe seguenti sono opzionali
           # user_name: 'github-actions[bot]'
           # user_email: 'github-actions[bot]@users.noreply.github.com'
           # commit_message: ${{ github.event.head_commit.message }}
