@@ -5,6 +5,7 @@ theme = "paige"
 # Rimuovi o commenta la vecchia riga languageCode = 'it-it' se presente qui fuori
 
 defaultContentLanguage = "it" # Imposta l'italiano come lingua predefinita
+defaultContentLanguageInSubdir = true
 
 [languages]
   [languages.it]
