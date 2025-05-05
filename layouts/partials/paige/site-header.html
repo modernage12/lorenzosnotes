@@ -1,6 +1,6 @@
 {{ $page := . }}
 
-{{ $basePath := path.Clean (urls.Parse (relLangURL "")).Path }} {{/* Lasciamo relLangURL qui per calcolare il basePath */}}
+{{ $basePath := path.Clean (urls.Parse (relLangURL "")).Path }}
 {{ $breadcrumbs := $page.Ancestors.Reverse | and ($page.Param "paige.site.disable_breadcrumbs" | not) }}
 {{ $description := $page.Param "paige.site.description" | markdownify | and ($page.Param "paige.site.disable_description" | not) }}
 {{ $first := templates.Exists "partials/paige/site-header-first.html" }}
@@ -10,14 +10,24 @@
 {{ $pills := false }}
 {{ $style := $page.Param "paige.site.menu_style" }}
 {{ $tabs := false }}
-{{ $title := site.Title | markdownify | and ($page.Param "paige.site.disable_title" | not) }} {{/* Potrebbe essere necessario aggiornare per titolo per lingua */}}
+{{ $title := "" }} {{/* Determiniamo il titolo specifico per lingua */}}
+{{ with site.GetPage "/" }}{{ with .Title }}{{ $title = . | markdownify | and ($page.Param "paige.site.disable_title" | not) }}{{ end }}{{ end }}
 {{ $underline := false }}
 
 {{ if eq $basePath "/" }}
     {{ $basePath = "" }}
 {{ end }}
 
-{{ $pagePath := strings.TrimPrefix $basePath $page.RelPermalink }}
+{{/* Rimuoviamo il prefisso della lingua dal permalink della pagina corrente per i confronti */}}
+{{ $currentPagePath := $page.RelPermalink }}
+{{ $langPrefix := printf "/%s/" $page.Lang }}
+{{ if strings.HasPrefix $currentPagePath $langPrefix }}
+    {{ $currentPagePath = strings.TrimPrefix $langPrefix $currentPagePath }}
+{{ else }}
+     {{/* Caso lingua default senza sottocartella (se defaultContentLanguageInSubdir è false, ma noi l'abbiamo messo a true) */}}
+     {{ $currentPagePath = strings.TrimPrefix "/" $currentPagePath }}
+{{ end }}
+
 
 {{ with $style }}
     {{ if eq . "pills" }}
@@ -37,7 +47,7 @@
     <header id="paige-site-header">
         {{ partial "paige/func-include.html" (dict "name" "site-header-first%s.html" "page" $page) | safeHTML }}
 
-        {{ with $title }} {{/* Verifica se prende il titolo dalla lingua giusta da hugo.toml */}}
+        {{ with $title }}
             <div class="display-1 fw-bold {{ if not (or $breadcrumbs $description $menu) }} paige-row-tall {{ end }} text-center" id="paige-site-title">
                  {{/* Usato absLangURL per la home */}}
                 <a class="text-body text-decoration-none" href="{{ "/" | absLangURL }}">{{ . }}</a> </div>
@@ -48,32 +58,51 @@
         {{ end }}
 
         {{ if $menu }}
-            {{ with site.Menus.main }} {{/* ATTENZIONE: Legge menu globale, problema nomi tradotti potrebbe rimanere */}}
+            {{/* Usiamo il menu definito per la lingua corrente in hugo.toml */}}
+            {{ $currentMenu := false }}
+            {{ if eq $.Lang "it" }}
+                {{ $currentMenu = site.Menus.main }} {{/* Nota: Questo potrebbe ancora dare problemi se Hugo non passa il menu giusto qui*/}}
+            {{ else if eq $.Lang "en" }}
+                 {{ $currentMenu = site.Menus.main }} {{/* Idealmente dovrebbe prendere quello EN*/}}
+            {{ else }}
+                 {{ $currentMenu = site.Menus.main }} {{/* Fallback */}}
+            {{ end }}
+
+            {{ with $currentMenu }} {{/* Proviamo a usare il menu corretto */}}
                 <nav aria-label="{{ T `paige_menu` | default "Main menu" }}" class="paige-row-tall" id="paige-site-menu">
                     <ul class="align-items-center justify-content-center nav {{ if $pills }} nav-pills {{ else if $tabs }} nav-tabs {{ else if $underline }} nav-underline {{ end }}">
-                        {{ range . }}
-                            {{/* Logica stato attivo invariata */}}
-                            {{ $menuPath := strings.TrimPrefix $basePath .URL }}
-                            {{ $home := and (eq $menuPath "/") (eq $page.Section "") }}
-                            {{ $menu := and (ne $menuPath "/") (hasPrefix $pagePath $menuPath) }}
-                            {{ $section := and (ne $menuPath "/") (hasPrefix $menuPath (printf "/%s/" $page.Section)) }}
-                            {{ $active := or $home $menu $section }}
-                            {{ if eq .URL "/" }} 
-                                {{ $active = $page.IsHome }} 
-                            {{ else }}
-                                {{ $active = or ($page.IsMenuCurrent "main" .) ($page.HasMenuCurrent "main" .) }}
+                        {{ range . }} {{/* Ciclo sulle voci del menu */}}
+                            {{ $menuURL := .URL }}
+                            {{ $isExternal := strings.HasPrefix $menuURL "http" }}
+
+                            {{/* Logica stato attivo (semplificata, da verificare a fondo) */}}
+                            {{ $active := false }}
+                            {{ if $page.IsHome }}
+                                {{ $active = eq $menuURL "/" }}
+                            {{ else if not $isExternal }}
+                                {{/* Confronta il path relativo della pagina corrente con l'URL del menu */}}
+                                {{ $active = eq $currentPagePath (strings.TrimSuffix "/" (strings.TrimPrefix "/" $menuURL)) }}
                             {{ end }}
 
                             <li class="nav-item {{ if .Children }} dropdown {{ end }}">
-                                 {{/* Usato absLangURL qui */}}
-                                <a {{ if $active }} aria-current="page" {{ end }} {{ if .Children }} aria-expanded="false" {{ end }} class="{{ if $active }} active {{ if $links }} fw-bold text-body {{ end }} {{ end }} {{ if .Params.paige.disabled }} disabled {{ end }} nav-link {{ if .Children }} dropdown-toggle {{ end }} {{ if $links }} text-decoration-underline {{ end }}" {{ if .Children }} data-bs-toggle="dropdown" {{ end }} href="{{ if not .Children -}}{{- .URL | absLangURL -}}{{- end }}" {{ if .Children }} role="button" {{ end }} {{ if not .Children }} {{ with partial "paige/func-target.html" (dict "page" $page "url" (.URL | absLangURL)) }} target="{{ . }}" {{ end }} {{ end }}>{{ .Name | markdownify }}</a> {{ with .Children }}
+                                {{ $linkURL := $menuURL }}
+                                {{ if not $isExternal }}
+                                    {{ $linkURL = $menuURL | absLangURL }} {{/* Usa absLangURL per link interni */}}
+                                {{ end }}
+                                
+                                <a {{ if $active }} aria-current="page" {{ end }} {{ if .Children }} aria-expanded="false" {{ end }} class="{{ if $active }} active {{ if $links }} fw-bold text-body {{ end }} {{ end }} {{ if .Params.paige.disabled }} disabled {{ end }} nav-link {{ if .Children }} dropdown-toggle {{ end }} {{ if $links }} text-decoration-underline {{ end }}" {{ if .Children }} data-bs-toggle="dropdown" {{ end }} href="{{ if not .Children }}{{ $linkURL }}{{ else }}#{{ end }}" {{ if .Children }} role="button" {{ end }} {{ if not .Children }}{{ if $isExternal }} target="_blank" rel="noopener noreferrer" {{ end }}{{ end }}>{{ .Name | markdownify }}</a> {{ with .Children }}
                                     <ul class="dropdown-menu">
                                         {{ range . }}
-                                            {{/* ... (parti interne del dropdown invariate tranne l'href) ... */}}
+                                            {{ $childURL := .URL }}
+                                            {{ $childIsExternal := strings.HasPrefix $childURL "http" }}
+                                            {{ if not $childIsExternal }}
+                                                {{ $childURL = $childURL | absLangURL }} {{/* Usa absLangURL anche per sottomenu */}}
+                                            {{ end }}
+
+                                            {{/* ... (divider e header invariati) ... */}}
                                             <li>
-                                                  {{/* Usato absLangURL anche qui */}}
-                                                <a class="{{ if .Params.paige.disabled }} disabled {{ end }} dropdown-item" href="{{ .URL | absLangURL }}" {{ with partial "paige/func-target.html" (dict "page" $page "url" (.URL | absLangURL)) }} target="{{ . }}" {{ end }}>{{ .Name | markdownify }}</a> </li>
-                                            {{/* ... (parti interne del dropdown invariate) ... */}}
+                                                <a class="{{ if .Params.paige.disabled }} disabled {{ end }} dropdown-item" href="{{ $childURL }}" {{ if $childIsExternal }} target="_blank" rel="noopener noreferrer" {{ end }}>{{ .Name | markdownify }}</a> </li>
+                                            {{/* ... (divider e header invariati) ... */}}
                                         {{ end }}
                                     </ul>
                                 {{ end }}
@@ -86,7 +115,18 @@
 
         {{ with $breadcrumbs }}
              {{/* Logica breadcrumbs invariata */}}
-            {{/* ... */}}
+            <nav aria-label="{{ T `paige_breadcrumbs` | default "Breadcrumbs" }}" class="paige-row-tall" id="paige-site-breadcrumbs">
+                <div class="d-flex justify-content-center">
+                    <ol class="breadcrumb mb-0">
+                        {{ range . }}
+                            {{ $title := cond .IsHome (T "paige_home" | default "Home") .LinkTitle }}
+                            <li class="breadcrumb-item">
+                                <a href="{{ .RelPermalink }}">{{ $title | markdownify | plainify | htmlUnescape }}</a>
+                            </li>
+                        {{ end }}
+                    </ol>
+                </div>
+            </nav>
         {{ end }}
 
         {{ partial "paige/func-include.html" (dict "name" "site-header-last%s.html" "page" $page) | safeHTML }}
