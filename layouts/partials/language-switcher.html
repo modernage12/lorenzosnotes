@@ -1,0 +1,15 @@
+{{ if .IsTranslated }}
+<nav aria-label="Language switcher" style="margin-bottom: 0.5rem; text-align: center;">
+  <ul style="list-style: none; padding: 0; margin: 0; display: inline-flex; gap: 0.75rem; border: 1px solid #ccc; border-radius: 5px; padding: 2px 5px;">
+    {{ range .AllTranslations }}
+    <li style="display: inline;">
+      {{ if eq .Lang $.Lang }}
+      <span lang="{{ .Language.Lang }}"><strong>{{ .Language.LanguageName }}</strong></span>
+      {{ else }}
+      <a href="{{ .Permalink }}" lang="{{ .Language.Lang }}" title="Switch to {{ .Language.LanguageName }}" style="text-decoration: none;">{{ .Language.LanguageName }}</a>
+      {{ end }}
+    </li>
+    {{ end }}
+  </ul>
+</nav>
+{{ end }}

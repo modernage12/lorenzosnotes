@@ -1,0 +1,9 @@
+# File i18n/en.toml
+[linkedinTitle]
+other = "LinkedIn Profile"
+
+[githubTitle]
+other = "GitHub Profile"
+
+[spotifyTitle]
+other = "Spotify Profile"
