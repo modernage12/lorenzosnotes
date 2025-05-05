@@ -26,22 +26,22 @@ defaultContentLanguageInSubdir = true
       [[languages.it.menu.main]]
         identifier = "progetti_it"
         name = "Progetti"      # Nome in Italiano
-        url = "progetti/"     # URL relativo alla lingua
+        url = "/progetti/"     # URL relativo alla lingua
         weight = 20
       [[languages.it.menu.main]]
         identifier = "chi-sono_it" 
         name = "Chi Sono"      # Nome in Italiano
-        url = "about/"        # URL relativo alla lingua
+        url = "/about/"        # URL relativo alla lingua
         weight = 30
       [[languages.it.menu.main]]
         identifier = "contatti_it"
         name = "Contatti"      # Nome in Italiano
-        url = "contatti/"     # URL relativo alla lingua
+        url = "/contatti/"     # URL relativo alla lingua
         weight = 40 
       [[languages.it.menu.main]]
         identifier = "blog_it"
         name = "Blog"          # Nome in Italiano
-        url = "blog/"         # URL relativo alla lingua
+        url = "/blog/"         # URL relativo alla lingua
         weight = 50 
 
   [languages.en]
@@ -60,22 +60,22 @@ defaultContentLanguageInSubdir = true
       [[languages.en.menu.main]]
         identifier = "projects_en"
         name = "Projects"      # Nome in Inglese
-        url = "progetti/"     # URL relativo alla lingua (usa lo stesso path relativo!)
+        url = "/progetti/"     # URL relativo alla lingua (usa lo stesso path relativo!)
         weight = 20
       [[languages.en.menu.main]]
         identifier = "about_en" 
         name = "About Me"      # Nome in Inglese
-        url = "about/"        # URL relativo alla lingua
+        url = "/about/"        # URL relativo alla lingua
         weight = 30
       [[languages.en.menu.main]]
         identifier = "contact_en"
         name = "Contact"       # Nome in Inglese
-        url = "contatti/"     # URL relativo alla lingua
+        url = "/contatti/"     # URL relativo alla lingua
         weight = 40 
       [[languages.en.menu.main]]
         identifier = "blog_en"
         name = "Blog"          # Nome in Inglese (o come vuoi tradurlo)
-        url = "blog/"         # URL relativo alla lingua
+        url = "/blog/"         # URL relativo alla lingua
         weight = 50 
 
 # Assicurati che le altre configurazioni (baseURL, theme, [params...], [menu...], ecc.) 
