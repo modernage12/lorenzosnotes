@@ -38,7 +38,7 @@ jobs:
 
       # Un solo passo di Build
       - name: Build Sito
-        run: hugo --minify
+        run: hugo --minify --baseURL "https://modernage12.github.io/lorenzosnotes/"
 
       # Passo per il Deploy sul branch gh-pages
       - name: Deploy su branch gh-pages
