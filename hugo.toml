@@ -3,9 +3,10 @@ title = "Lorenzo's Notes"
 theme = "paige"
 
 # Rimuovi o commenta la vecchia riga languageCode = 'it-it' se presente qui fuori
-# prova prova
 
 defaultContentLanguage = "it" # Imposta l'italiano come lingua predefinita
+
+# test
 
 [languages]
   [languages.it]
