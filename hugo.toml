@@ -6,6 +6,8 @@ theme = "paige"
 
 defaultContentLanguage = "it" # Imposta l'italiano come lingua predefinita
 
+# prova
+
 [languages]
   [languages.it]
     title = "Lorenzo's Notes" # Titolo del sito in italiano
