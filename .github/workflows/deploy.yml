@@ -41,8 +41,8 @@ jobs:
         run: hugo --minify 
         
       # NUOVO PASSO DI DEBUG: Mostra contenuto cartella public
-          - name: List Public Folder Structure 
-            run: ls -R public
+      - name: List Public Folder Structure 
+        run: ls -R public
 
       # Passo per il Deploy sul branch gh-pages
       - name: Deploy su branch gh-pages
