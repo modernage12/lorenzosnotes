@@ -3,11 +3,9 @@ title = "Lorenzo's Notes"
 theme = "paige"
 
 # Rimuovi o commenta la vecchia riga languageCode = 'it-it' se presente qui fuori
+# prova prova
 
 defaultContentLanguage = "it" # Imposta l'italiano come lingua predefinita
-defaultContentLanguageInSubdir = true
-
-# prova
 
 [languages]
   [languages.it]
@@ -99,6 +97,36 @@ defaultContentLanguageInSubdir = true
     max-width: 40rem; # Limita la larghezza massima a circa 65-70 caratteri
   }
   """
+  
+[menu]
+  [[menu.main]]
+    identifier = "home"    # Identificatore unico per questa voce
+    name = "Home"          # Testo che appare nel menu
+    url = "/"              # Link a cui punta (la homepage)
+    weight = 10            # Ordine nel menu (numeri bassi prima)
+
+  [[menu.main]]
+    identifier = "progetti"
+    name = "Progetti"
+    url = "/progetti/"     # Link alla sezione progetti
+    weight = 20
+
+  [[menu.main]]
+    identifier = "chi-sono" # O chiamalo 'about' se preferisci
+    name = "Chi Sono"
+    url = "/about/"        # Link alla pagina about (verifica che l'URL sia giusto)
+    weight = 30
+  [[menu.main]]
+	identifier = "contatti"
+	name = "Contatti"
+	url = "/contatti/"
+	weight = 40 # Mettilo come ultimo, dopo "Chi Sono"
+	
+  [[menu.main]]
+	identifier = "blog"
+	name = "Blog"
+	url = "/blog/"
+	weight = 50 # Assicurati che sia un peso maggiore degli altri
 
 [params.paige.subpages]
   disable_date = true         # Nasconde la data nelle liste
