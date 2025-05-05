@@ -41,7 +41,7 @@
         {{ end }}
 
         {{ if $menu }}
-            {{ $currentMenu := site.Menus.main }} {{/* Tentativo di prendere menu giusto */}}
+            {{ $currentMenu := site.Menus.main }} 
             {{ $siteBase := site.BaseURL }} 
             {{ $currentLang := .Page.Lang }} 
             {{ $isDefaultLang := eq $currentLang site.DefaultContentLanguage }}
@@ -56,39 +56,31 @@
 
                             {{/* ----------- COSTRUZIONE MANUALE URL ----------- */}}
                             {{ $finalURL := "" }}
-                            {{ if $isExternal }}
-                                {{ $finalURL = $menuURL }}
+                            {{ if $isExternal }}{{ $finalURL = $menuURL }}
                             {{ else }}
-                                {{ $finalURL = $siteBase }} {{/* Parte da es: https://.../lorenzosnotes/ */}}
-                                {{ if not $isDefaultLang }}
-                                    {{ $finalURL = printf "%s%s" $finalURL $currentLang }} {{/* Aggiunge /en (senza slash finale qui) */}}
-                                {{ else if $defaultInSubdir }}
-                                     {{ $finalURL = printf "%s%s" $finalURL $currentLang }} {{/* Aggiunge /it se default è in subdir */}}
-                                {{ end }}
-                                {{/* Aggiunge lo / se non c'è già e l'URL relativo (es. /progetti/) */}}
+                                {{ $finalURL = $siteBase }} 
+                                {{ if not $isDefaultLang }}{{ $finalURL = printf "%s%s" $finalURL $currentLang }}
+                                {{ else if $defaultInSubdir }}{{ $finalURL = printf "%s%s" $finalURL $currentLang }}{{ end }}
                                 {{ $finalURL = printf "%s%s" ($finalURL | strings.TrimSuffix "/") $menuURL }} 
+                                {{ $finalURL = $finalURL | safeURL }}
                             {{ end }}
-                            {{ $finalURL = $finalURL | safeURL }} {{/* Assicura URL sia sicuro */}}
                             {{/* ----------- FINE COSTRUZIONE MANUALE ----------- */}}
 
-                            {{/* Logica stato attivo (semplificata) */}}
+                            {{/* ***** LOGICA ATTIVA RIPRISTINATA A QUELLA STANDARD HUGO ***** */}}
                             {{ $active := false }}
-                            {{ $cleanedMenuURL := strings.TrimSuffix "/" (strings.TrimPrefix "/" $menuURL) }}
-                            {{ if and (not $isDefaultLang) (not $defaultInSubdir) }} {{/* Caso strano? */}}
-                                 {{/* Logica complessa, per ora semplifichiamo */}}
+                            {{ if eq .URL "/" }} 
+                                {{ $active = $.Page.IsHome }} 
                             {{ else }}
-                                {{ $pagePathToCheck := $currentPagePath }} {{/* Usiamo $currentPagePath definito sopra */}}
-                                {{ if eq $cleanedMenuURL "" }} {{/* È la home? */}}
-                                    {{ $active = $page.IsHome }}
-                                {{ else }}
-                                    {{ $active = eq $pagePathToCheck $cleanedMenuURL }}
-                                {{ end }}
+                                {{/* Usiamo le funzioni interne di Hugo. Potrebbe esserci ancora il problema sulla Home, ma dovrebbe funzionare per le altre */}}
+                                {{ $active = or ($.Page.IsMenuCurrent "main" .) ($.Page.HasMenuCurrent "main" .) }}
                             {{ end }}
+                            {{/* ***** FINE LOGICA ATTIVA RIPRISTINATA ***** */}}
 
                             <li class="nav-item {{ if .Children }} dropdown {{ end }}">
                                 <a {{ if $active }} aria-current="page" {{ end }} {{ if .Children }} aria-expanded="false" {{ end }} class="{{ if $active }} active {{ if $links }} fw-bold text-body {{ end }} {{ end }} {{ if .Params.paige.disabled }} disabled {{ end }} nav-link {{ if .Children }} dropdown-toggle {{ end }} {{ if $links }} text-decoration-underline {{ end }}" {{ if .Children }} data-bs-toggle="dropdown" {{ end }} href="{{ if not .Children }}{{ $finalURL }}{{ else }}#{{ end }}" {{ if .Children }} role="button" {{ end }} {{ if not .Children }}{{ if $isExternal }} target="_blank" rel="noopener noreferrer" {{ end }}{{ end }}>{{ .Name | markdownify }}</a> {{ with .Children }}
                                     <ul class="dropdown-menu">
                                         {{ range . }}
+                                             {{/* Costruzione manuale URL per sottomenu */}}
                                             {{ $childURL := .URL }}
                                             {{ $childIsExternal := strings.HasPrefix $childURL "http" }}
                                             {{ $finalChildURL := "" }}
@@ -105,16 +97,28 @@
                                     </ul>
                                 {{ end }}
                             </li>
-                        {{ end }}
+                        {{ end }} {{/* Fine range . */}}
                     </ul>
                 </nav>
-            {{ end }}
-        {{ end }}
+            {{ end }} {{/* Fine with $currentMenu */}}
+        {{ end }} {{/* Fine if $menu */}}
 
         {{ with $breadcrumbs }}
-            {{/* ... Logica breadcrumbs invariata ... */}}
+             {{/* ... Logica breadcrumbs invariata ... */}}
+             <nav aria-label="{{ T `paige_breadcrumbs` | default "Breadcrumbs" }}" class="paige-row-tall" id="paige-site-breadcrumbs">
+                 <div class="d-flex justify-content-center">
+                     <ol class="breadcrumb mb-0">
+                         {{ range . }}
+                             {{ $title := cond .IsHome (T "paige_home" | default "Home") .LinkTitle }}
+                             <li class="breadcrumb-item">
+                                 <a href="{{ .RelPermalink }}">{{ $title | markdownify | plainify | htmlUnescape }}</a>
+                             </li>
+                         {{ end }}
+                     </ol>
+                 </div>
+             </nav>
         {{ end }}
 
         {{ partial "paige/func-include.html" (dict "name" "site-header-last%s.html" "page" $page) | safeHTML }}
     </header>
-{{ end }}
+{{ end }} {{/* Fine if or ... */}}
