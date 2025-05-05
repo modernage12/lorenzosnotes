@@ -5,6 +5,7 @@ theme = "paige"
 # Rimuovi o commenta la vecchia riga languageCode = 'it-it' se presente qui fuori
 
 defaultContentLanguage = "it" # Imposta l'italiano come lingua predefinita
+defaultContentLanguageInSubdir = true
 
 # prova
 
@@ -25,22 +26,22 @@ defaultContentLanguage = "it" # Imposta l'italiano come lingua predefinita
       [[languages.it.menu.main]]
         identifier = "progetti_it"
         name = "Progetti"      # Nome in Italiano
-        url = "/progetti/"     # URL relativo alla lingua
+        url = "progetti/"     # URL relativo alla lingua
         weight = 20
       [[languages.it.menu.main]]
         identifier = "chi-sono_it" 
         name = "Chi Sono"      # Nome in Italiano
-        url = "/about/"        # URL relativo alla lingua
+        url = "about/"        # URL relativo alla lingua
         weight = 30
       [[languages.it.menu.main]]
         identifier = "contatti_it"
         name = "Contatti"      # Nome in Italiano
-        url = "/contatti/"     # URL relativo alla lingua
+        url = "contatti/"     # URL relativo alla lingua
         weight = 40 
       [[languages.it.menu.main]]
         identifier = "blog_it"
         name = "Blog"          # Nome in Italiano
-        url = "/blog/"         # URL relativo alla lingua
+        url = "blog/"         # URL relativo alla lingua
         weight = 50 
 
   [languages.en]
@@ -59,22 +60,22 @@ defaultContentLanguage = "it" # Imposta l'italiano come lingua predefinita
       [[languages.en.menu.main]]
         identifier = "projects_en"
         name = "Projects"      # Nome in Inglese
-        url = "/progetti/"     # URL relativo alla lingua (usa lo stesso path relativo!)
+        url = "progetti/"     # URL relativo alla lingua (usa lo stesso path relativo!)
         weight = 20
       [[languages.en.menu.main]]
         identifier = "about_en" 
         name = "About Me"      # Nome in Inglese
-        url = "/about/"        # URL relativo alla lingua
+        url = "about/"        # URL relativo alla lingua
         weight = 30
       [[languages.en.menu.main]]
         identifier = "contact_en"
         name = "Contact"       # Nome in Inglese
-        url = "/contatti/"     # URL relativo alla lingua
+        url = "contatti/"     # URL relativo alla lingua
         weight = 40 
       [[languages.en.menu.main]]
         identifier = "blog_en"
         name = "Blog"          # Nome in Inglese (o come vuoi tradurlo)
-        url = "/blog/"         # URL relativo alla lingua
+        url = "blog/"         # URL relativo alla lingua
         weight = 50 
 
 # Assicurati che le altre configurazioni (baseURL, theme, [params...], [menu...], ecc.) 
@@ -98,36 +99,6 @@ defaultContentLanguage = "it" # Imposta l'italiano come lingua predefinita
     max-width: 40rem; # Limita la larghezza massima a circa 65-70 caratteri
   }
   """
-  
-[menu]
-  [[menu.main]]
-    identifier = "home"    # Identificatore unico per questa voce
-    name = "Home"          # Testo che appare nel menu
-    url = "/"              # Link a cui punta (la homepage)
-    weight = 10            # Ordine nel menu (numeri bassi prima)
-
-  [[menu.main]]
-    identifier = "progetti"
-    name = "Progetti"
-    url = "/progetti/"     # Link alla sezione progetti
-    weight = 20
-
-  [[menu.main]]
-    identifier = "chi-sono" # O chiamalo 'about' se preferisci
-    name = "Chi Sono"
-    url = "/about/"        # Link alla pagina about (verifica che l'URL sia giusto)
-    weight = 30
-  [[menu.main]]
-	identifier = "contatti"
-	name = "Contatti"
-	url = "/contatti/"
-	weight = 40 # Mettilo come ultimo, dopo "Chi Sono"
-	
-  [[menu.main]]
-	identifier = "blog"
-	name = "Blog"
-	url = "/blog/"
-	weight = 50 # Assicurati che sia un peso maggiore degli altri
 
 [params.paige.subpages]
   disable_date = true         # Nasconde la data nelle liste
