@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Website on</title><link>https://modernage12.github.io/lorenzosnotes/it/tags/website/</link><description>Recent content in Website on</description><generator>Hugo</generator><language>it</language><lastBuildDate>Sun, 27 Apr 2025 13:55:00 +0200</lastBuildDate><atom:link href="https://modernage12.github.io/lorenzosnotes/it/tags/website/index.xml" rel="self" type="application/rss+xml"/><item><title>Personal Site with Hugo Framework</title><link>https://modernage12.github.io/lorenzosnotes/it/en/progetti/sito_personale_hugo/</link><pubDate>Sun, 27 Apr 2025 13:55:00 +0200</pubDate><guid>https://modernage12.github.io/lorenzosnotes/it/en/progetti/sito_personale_hugo/</guid><description>&lt;p>This is the project for the creation and continuous development of my personal website/portfolio, the digital space you are in now! It was built using the static site generator &lt;strong>Hugo&lt;/strong> and the &lt;strong>Paige&lt;/strong> theme.&lt;/p>
+&lt;h3 id="objective">Objective:&lt;/h3>
+&lt;p>To create an online space to present myself more completely than a traditional CV, showing work and educational experiences, personal projects, interests, and skills in a dynamic and authentic way.&lt;/p>
+&lt;h3 id="technologies-and-tools-used">Technologies and Tools Used:&lt;/h3>
+&lt;ul>
+&lt;li>&lt;strong>Static Site Generator:&lt;/strong> Hugo (v0.141.0 Extended)&lt;/li>
+&lt;li>&lt;strong>Theme:&lt;/strong> Paige (integrated as a Git Submodule)&lt;/li>
+&lt;li>&lt;strong>Content Language:&lt;/strong> Markdown with TOML Front Matter&lt;/li>
+&lt;li>&lt;strong>Hosting:&lt;/strong> GitHub Pages (configured for free deployment)&lt;/li>
+&lt;li>&lt;strong>Automatic Deployment:&lt;/strong> GitHub Actions (custom workflow with &lt;code>peaceiris/actions-gh-pages&lt;/code> for build and push to &lt;code>gh-pages&lt;/code> branch)&lt;/li>
+&lt;li>&lt;strong>Build Dependencies:&lt;/strong> Dart Sass (installed in the Actions workflow to compile the theme&amp;rsquo;s SCSS)&lt;/li>
+&lt;li>&lt;strong>Version Control:&lt;/strong> Git and GitHub&lt;/li>
+&lt;li>&lt;strong>&lt;code>Analytics: Google Analytics (GA4) for monitoring visits and user behavior.&lt;/code>&lt;/strong>&lt;/li>
+&lt;/ul>
+&lt;h3 id="what-i-learned-and-challenges-overcome">What I Learned and Challenges Overcome:&lt;/h3>
+&lt;p>This project has been an excellent training ground for delving into various aspects of web development and modern workflow:&lt;/p></description></item></channel></rss>

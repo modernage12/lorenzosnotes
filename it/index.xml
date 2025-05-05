@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title/><link>https://modernage12.github.io/lorenzosnotes/it/</link><description>Recent content on</description><generator>Hugo</generator><language>it</language><lastBuildDate>Sun, 27 Apr 2025 21:21:00 +0200</lastBuildDate><atom:link href="https://modernage12.github.io/lorenzosnotes/it/index.xml" rel="self" type="application/rss+xml"/><item><title>AMPHI: NFT Ticketing &amp; P2P Marketplace</title><link>https://modernage12.github.io/lorenzosnotes/it/en/progetti/amphi/</link><pubDate>Sun, 27 Apr 2025 21:21:00 +0200</pubDate><guid>https://modernage12.github.io/lorenzosnotes/it/en/progetti/amphi/</guid><description>&lt;p>&lt;strong>AMPHI&lt;/strong> is a project that tackles a well-known and frustrating problem in the world of live events: &lt;strong>non-transparent secondary ticketing, scalping, and bot activity&lt;/strong> that harm fans, artists, and organizers.&lt;/p>
+&lt;h3 id="the-solution-nft-tickets-on-blockchain">The Solution: NFT Tickets on Blockchain&lt;/h3>
+&lt;p>The core idea of AMPHI is to transform event tickets into &lt;strong>Non-Fungible Tokens (NFTs)&lt;/strong> managed on a blockchain (currently tested on Polygon Amoy). This approach allows for the introduction of:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Transparency:&lt;/strong> Each ticket is unique, and its history (issuance, ownership transfers) is traceable on-chain.&lt;/li>
+&lt;li>&lt;strong>Control:&lt;/strong> Rules can be implemented directly in the ticket&amp;rsquo;s smart contract or the marketplace to limit unfair practices.&lt;/li>
+&lt;li>&lt;strong>New Possibilities:&lt;/strong> NFTs open doors to additional experiences for fans (digital collectibles, exclusive content, loyalty mechanisms).&lt;/li>
+&lt;/ul>
+&lt;h3 id="the-mvp-minimum-viable-product">The MVP (Minimum Viable Product)&lt;/h3>
+&lt;p>I have developed a working &lt;strong>MVP (Minimum Viable Product) / Demo&lt;/strong> that demonstrates the core functionalities:&lt;/p></description></item><item><title>AMPHI: Ticketing NFT &amp; P2P Marketplace</title><link>https://modernage12.github.io/lorenzosnotes/it/it/progetti/amphi/</link><pubDate>Sun, 27 Apr 2025 21:21:00 +0200</pubDate><guid>https://modernage12.github.io/lorenzosnotes/it/it/progetti/amphi/</guid><description>&lt;p>&lt;strong>AMPHI&lt;/strong> è un progetto che affronta un problema noto e frustrante nel mondo degli eventi dal vivo: il &lt;strong>secondary ticketing non trasparente, lo scalping e l&amp;rsquo;azione dei bot&lt;/strong> che danneggiano fan, artisti e organizzatori.&lt;/p>
+&lt;h3 id="la-soluzione-biglietti-nft-su-blockchain">La Soluzione: Biglietti NFT su Blockchain&lt;/h3>
+&lt;p>L&amp;rsquo;idea centrale di AMPHI è trasformare i biglietti per eventi in &lt;strong>Non-Fungible Tokens (NFT)&lt;/strong> gestiti su blockchain (attualmente testato su Polygon Amoy). Questo approccio permette di introdurre:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Trasparenza:&lt;/strong> Ogni biglietto è unico e la sua storia (emissione, passaggi di proprietà) è tracciabile on-chain.&lt;/li>
+&lt;li>&lt;strong>Controllo:&lt;/strong> È possibile implementare regole direttamente nello smart contract del biglietto o nel marketplace per limitare pratiche scorrette.&lt;/li>
+&lt;li>&lt;strong>Nuove Possibilità:&lt;/strong> Gli NFT aprono le porte a esperienze aggiuntive per i fan (collezionabili digitali, contenuti esclusivi, meccanismi di loyalty).&lt;/li>
+&lt;/ul>
+&lt;h3 id="lmvp-minimum-viable-product">L&amp;rsquo;MVP (Minimum Viable Product)&lt;/h3>
+&lt;p>Ho sviluppato un &lt;strong>MVP (Minimum Viable Product) / Demo funzionante&lt;/strong> che dimostra le funzionalità core:&lt;/p></description></item><item><title>stegoradio: Community Radio &amp; Content Marketing</title><link>https://modernage12.github.io/lorenzosnotes/it/en/progetti/stegoradio/</link><pubDate>Mon, 15 May 2023 10:00:00 +0200</pubDate><guid>https://modernage12.github.io/lorenzosnotes/it/en/progetti/stegoradio/</guid><description>&lt;p>&lt;strong>stegoradio&lt;/strong> was a collaborative project born with the aim of creating an &lt;strong>online radio and a community for emerging artists&lt;/strong> in Salento (Southern Italy).&lt;/p>
+&lt;h3 id="objective-and-challenges">Objective and Challenges&lt;/h3>
+&lt;p>We wanted to give visibility to local talents and create a gathering space, all with an almost non-existent budget. The main challenge was building awareness and engagement from scratch.&lt;/p>
+&lt;h3 id="strategy-and-actions">Strategy and Actions&lt;/h3>
+&lt;p>We focused heavily on &lt;strong>Content Marketing&lt;/strong> and &lt;strong>Social Media&lt;/strong> management, particularly Instagram. Key activities included:&lt;/p></description></item><item><title>stegoradio: Community Radio &amp; Content Marketing</title><link>https://modernage12.github.io/lorenzosnotes/it/it/progetti/stegoradio/</link><pubDate>Mon, 15 May 2023 10:00:00 +0200</pubDate><guid>https://modernage12.github.io/lorenzosnotes/it/it/progetti/stegoradio/</guid><description>&lt;p>&lt;strong>stegoradio&lt;/strong> è stato un progetto collaborativo nato con l&amp;rsquo;obiettivo di creare una &lt;strong>radio online e una community per artisti emergenti&lt;/strong> nel Salento (Sud Italia).&lt;/p>
+&lt;h3 id="obiettivo-e-sfide">Obiettivo e Sfide&lt;/h3>
+&lt;p>Volevamo dare visibilità a talenti locali e creare uno spazio di aggregazione, il tutto con un budget quasi inesistente. La sfida principale era costruire awareness e engagement partendo da zero.&lt;/p>
+&lt;h3 id="strategia-e-azioni">Strategia e Azioni&lt;/h3>
+&lt;p>Abbiamo puntato fortemente sul &lt;strong>Content Marketing&lt;/strong> e sulla gestione dei &lt;strong>Social Media&lt;/strong>, in particolare Instagram. Le attività principali includevano:&lt;/p></description></item><item><title>About Me</title><link>https://modernage12.github.io/lorenzosnotes/it/en/about/</link><pubDate>Sun, 27 Apr 2025 13:40:00 +0200</pubDate><guid>https://modernage12.github.io/lorenzosnotes/it/en/about/</guid><description>&lt;h2 id="hi-im-lorenzo-">Hi, I&amp;rsquo;m Lorenzo! 👋&lt;/h2>
+&lt;p>If I had to sum myself up? Maybe as &amp;ldquo;&lt;strong>an eternally curious, pragmatic creative&lt;/strong>&amp;rdquo;. Or perhaps, a &lt;strong>marketing graduate&lt;/strong> who has a blast &amp;ldquo;getting his hands dirty&amp;rdquo; with &lt;strong>technology&lt;/strong> and &lt;strong>artificial intelligence&lt;/strong> to understand how things work and, above all, to build something new.&lt;/p>
+&lt;p>Welcome to my digital space: a mix of portfolio, scattered notes, and ongoing projects.&lt;/p>
+&lt;h3 id="the-mix-marketing-data--code">The Mix: Marketing, Data &amp;amp; Code&lt;/h3>
+&lt;p>Technology and science have always fascinated me. &lt;strong>&lt;code>Even as a kid, this curiosity led me to tinker with early programming languages (C, Python, HTML), manage small online game servers (Habbo, Metin2), learning the basics of systems like FreeBSD, and actively moderate online communities and forums.&lt;/code>&lt;/strong> Then life led me to consider computer science, physics, even literature&amp;hellip; finally landing on &lt;strong>Economics and Marketing&lt;/strong> at the University of Parma (first Bachelor&amp;rsquo;s, then Master&amp;rsquo;s in Trade and Consumer Marketing). I am also fluent in &lt;strong>English (C1 level)&lt;/strong>. Why this path? Because in marketing, I saw a fascinating &lt;strong>intersection of disciplines&lt;/strong>: not just economics and psychology, but also communication, data, art, and, increasingly, technology and code. It&amp;rsquo;s precisely this mix that stimulates me.&lt;/p></description></item><item><title>Chi Sono</title><link>https://modernage12.github.io/lorenzosnotes/it/it/about/</link><pubDate>Sun, 27 Apr 2025 13:40:00 +0200</pubDate><guid>https://modernage12.github.io/lorenzosnotes/it/it/about/</guid><description>&lt;h2 id="ciao-sono-lorenzo-">Ciao, sono Lorenzo! 👋&lt;/h2>
+&lt;p>Se dovessi riassumermi? Forse con &amp;ldquo;&lt;strong>un eterno curioso, un creativo pragmatico&lt;/strong>&amp;rdquo;. O magari, un &lt;strong>marketer laureato&lt;/strong> che si diverte un mondo a &amp;ldquo;sporcarsi le mani&amp;rdquo; con la &lt;strong>tecnologia&lt;/strong> e l&amp;rsquo;&lt;strong>intelligenza artificiale&lt;/strong> per capire come funzionano le cose e, soprattutto, per costruire qualcosa di nuovo.&lt;/p>
+&lt;p>Benvenuto nel mio spazio digitale: un misto di portfolio, appunti sparsi e progetti in corso.&lt;/p>
+&lt;h3 id="il-mix-marketing-dati--codice">Il Mix: Marketing, Dati &amp;amp; Codice&lt;/h3>
+&lt;p>La tecnologia e la scienza mi hanno sempre affascinato. &lt;strong>&lt;code>Già da ragazzino, questa curiosità mi ha portato a smanettare con i primi linguaggi di programmazione (C, Python, HTML), a gestire piccoli server di gioco online (Habbo, Metin2) imparando le basi di sistemi come FreeBSD, e a impegnarmi nella moderazione attiva di community e forum online.&lt;/code>&lt;/strong> Poi la vita mi ha portato a considerare informatica, fisica, persino lettere… per approdare infine a &lt;strong>Economia e Marketing&lt;/strong> all&amp;rsquo;Università di Parma (prima Triennale, poi Magistrale in Trade e Consumer Marketing). Parlo inoltre fluentemente &lt;strong>Inglese (livello C1)&lt;/strong>. Perché questo percorso? Perché nel marketing ho visto un affascinante &lt;strong>incrocio di discipline&lt;/strong>: non solo economia e psicologia, ma anche comunicazione, dati, arte e, sempre di più, tecnologia e codice. È proprio questo mix che mi stimola.&lt;/p></description></item><item><title>E-commerce Experiment: Home Automation &amp; Performance Ads</title><link>https://modernage12.github.io/lorenzosnotes/it/en/progetti/ecommerce-shopify/</link><pubDate>Thu, 20 Oct 2022 10:00:00 +0200</pubDate><guid>https://modernage12.github.io/lorenzosnotes/it/en/progetti/ecommerce-shopify/</guid><description>&lt;p>During my master&amp;rsquo;s degree period, I started a &lt;strong>personal e-commerce project&lt;/strong> focused on the &lt;strong>home automation&lt;/strong> sector, with the primary goal of &lt;strong>learning concretely&lt;/strong> how to use digital marketing tools and manage an online store.&lt;/p>
+&lt;h3 id="objective-and-context">Objective and Context&lt;/h3>
+&lt;p>The purpose was not primarily sales, but &lt;strong>&amp;ldquo;getting my hands dirty&amp;rdquo;&lt;/strong> with practice, having a &lt;strong>very limited budget&lt;/strong> as a student living away from home. I chose the &lt;strong>Shopify&lt;/strong> platform for its completeness and widespread use.&lt;/p></description></item><item><title>Esperimento E-commerce: Domotica &amp; Performance Ads</title><link>https://modernage12.github.io/lorenzosnotes/it/it/progetti/ecommerce-shopify/</link><pubDate>Thu, 20 Oct 2022 10:00:00 +0200</pubDate><guid>https://modernage12.github.io/lorenzosnotes/it/it/progetti/ecommerce-shopify/</guid><description>&lt;p>Durante il periodo della laurea magistrale, ho avviato un &lt;strong>progetto personale di e-commerce&lt;/strong> focalizzato sul settore della &lt;strong>domotica&lt;/strong>, con l&amp;rsquo;obiettivo primario di &lt;strong>apprendere concretamente&lt;/strong> l&amp;rsquo;utilizzo degli strumenti di digital marketing e la gestione di uno store online.&lt;/p>
+&lt;h3 id="obiettivo-e-contesto">Obiettivo e Contesto&lt;/h3>
+&lt;p>Lo scopo non era primariamente la vendita, ma &lt;strong>&amp;ldquo;sporcarsi le mani&amp;rdquo;&lt;/strong> con la pratica, avendo a disposizione un &lt;strong>budget molto limitato&lt;/strong> da studente fuori sede. Ho scelto la piattaforma &lt;strong>Shopify&lt;/strong> per la sua completezza e diffusione.&lt;/p></description></item><item><title>Contacts</title><link>https://modernage12.github.io/lorenzosnotes/it/en/contatti/</link><pubDate>Sun, 27 Apr 2025 17:00:00 +0200</pubDate><guid>https://modernage12.github.io/lorenzosnotes/it/en/contatti/</guid><description>&lt;h2 id="lets-get-in-touch">Let&amp;rsquo;s Get in Touch&lt;/h2>
+&lt;p>The best way to contact me is via email: &lt;strong>&lt;a href="mailto:lorenzoblu@hotmail.it">lorenzoblu@hotmail.it&lt;/a>&lt;/strong>.&lt;/p>
+&lt;p>You can also find me on &lt;a href="https://www.linkedin.com/in/lorenzo-caputo1202/">&lt;strong>LinkedIn&lt;/strong>&lt;/a>.&lt;/p>
+&lt;hr>
+&lt;h3 id="curriculum-vitae">Curriculum Vitae&lt;/h3>
+&lt;p>If you would like a copy of my updated CV, you can download it here:&lt;/p>
+&lt;p>&lt;a href="https://modernage12.github.io/lorenzosnotes/lorenzosnotes/files/Lorenzo_Caputo_Digital_Marketing_Specialist_EN.pdf">&lt;strong>Download my CV (PDF)&lt;/strong>&lt;/a>&lt;/p></description></item><item><title>Contatti</title><link>https://modernage12.github.io/lorenzosnotes/it/it/contatti/</link><pubDate>Sun, 27 Apr 2025 17:00:00 +0200</pubDate><guid>https://modernage12.github.io/lorenzosnotes/it/it/contatti/</guid><description>&lt;h2 id="mettiamoci-in-contatto">Mettiamoci in Contatto&lt;/h2>
+&lt;p>Il modo migliore per contattarmi è tramite email: &lt;strong>&lt;a href="mailto:lorenzoblu@hotmail.it">lorenzoblu@hotmail.it&lt;/a>&lt;/strong>.&lt;/p>
+&lt;p>Puoi trovarmi anche su &lt;a href="https://www.linkedin.com/in/lorenzo-caputo1202/">&lt;strong>LinkedIn&lt;/strong>&lt;/a>.&lt;/p>
+&lt;hr>
+&lt;h3 id="curriculum-vitae">Curriculum Vitae&lt;/h3>
+&lt;p>Se desideri una copia del mio CV aggiornato, puoi scaricarla qui:&lt;/p>
+&lt;p>&lt;a href="https://modernage12.github.io/lorenzosnotes/lorenzosnotes/files/Lorenzo_Caputo_Digital_Marketing_Specialist.pdf">&lt;strong>Scarica il mio CV (PDF)&lt;/strong>&lt;/a>&lt;/p></description></item><item><title>polka clothing: Micro-Branding &amp; Vintage Reselling on Vinted</title><link>https://modernage12.github.io/lorenzosnotes/it/en/progetti/polka-vinted/</link><pubDate>Tue, 10 May 2022 10:00:00 +0200</pubDate><guid>https://modernage12.github.io/lorenzosnotes/it/en/progetti/polka-vinted/</guid><description>&lt;p>&lt;strong>polka clothing&lt;/strong> started as a fun little experiment in &lt;strong>micro-entrepreneurship&lt;/strong> and &lt;strong>branding&lt;/strong> in the world of &lt;strong>vintage clothing reselling&lt;/strong>, conducted with a friend.&lt;/p>
+&lt;h3 id="the-idea">The Idea&lt;/h3>
+&lt;p>We bought unique clothing items at flea markets and resold them on the &lt;strong>Vinted&lt;/strong> platform. The goal was not just to sell, but to create a small, recognizable brand and offer a quality experience.&lt;/p>
+&lt;h3 id="branding-and-marketing">Branding and Marketing&lt;/h3>
+&lt;p>We created the &amp;ldquo;&lt;strong>polka clothing&lt;/strong>&amp;rdquo; brand from scratch, defining:&lt;/p></description></item><item><title>polka clothing: Micro-Branding &amp; Vintage Reselling su Vinted</title><link>https://modernage12.github.io/lorenzosnotes/it/it/progetti/polka-vinted/</link><pubDate>Tue, 10 May 2022 10:00:00 +0200</pubDate><guid>https://modernage12.github.io/lorenzosnotes/it/it/progetti/polka-vinted/</guid><description>&lt;p>&lt;strong>polka clothing&lt;/strong> è nato come un piccolo esperimento divertente di &lt;strong>micro-imprenditoria&lt;/strong> e &lt;strong>branding&lt;/strong> nel mondo del &lt;strong>reselling di abiti vintage&lt;/strong>, condotto insieme a un amico.&lt;/p>
+&lt;h3 id="lidea">L&amp;rsquo;Idea&lt;/h3>
+&lt;p>Acquistavamo capi di abbigliamento particolari nei mercatini dell&amp;rsquo;usato e li rivendevamo sulla piattaforma &lt;strong>Vinted&lt;/strong>. L&amp;rsquo;obiettivo non era solo vendere, ma creare un piccolo brand riconoscibile e offrire un&amp;rsquo;esperienza di qualità.&lt;/p>
+&lt;h3 id="branding-e-marketing">Branding e Marketing&lt;/h3>
+&lt;p>Abbiamo creato il brand &amp;ldquo;&lt;strong>polka clothing&lt;/strong>&amp;rdquo; da zero, definendo:&lt;/p>
+&lt;ul>
+&lt;li>Uno &lt;strong>stile&lt;/strong> e un&amp;rsquo;immagine coordinata.&lt;/li>
+&lt;li>Un &lt;strong>tone of voice&lt;/strong> specifico per la comunicazione.&lt;/li>
+&lt;li>Una &lt;strong>pagina Instagram&lt;/strong> dedicata ( &lt;a href="https://www.instagram.com/polka_clothing/">&lt;strong>@polka_clothing&lt;/strong>&lt;/a>) per presentare i capi e interagire.&lt;/li>
+&lt;/ul>
+&lt;h3 id="esperienza-cliente">Esperienza Cliente&lt;/h3>
+&lt;p>Particolare attenzione è stata data all&amp;rsquo;esperienza post-acquisto, curando il &lt;strong>packaging&lt;/strong> e aggiungendo piccoli dettagli come &lt;strong>caramelle e bigliettini di ringraziamento&lt;/strong> personalizzati.&lt;/p></description></item><item><title>Personal Site with Hugo Framework</title><link>https://modernage12.github.io/lorenzosnotes/it/en/progetti/sito_personale_hugo/</link><pubDate>Sun, 27 Apr 2025 13:55:00 +0200</pubDate><guid>https://modernage12.github.io/lorenzosnotes/it/en/progetti/sito_personale_hugo/</guid><description>&lt;p>This is the project for the creation and continuous development of my personal website/portfolio, the digital space you are in now! It was built using the static site generator &lt;strong>Hugo&lt;/strong> and the &lt;strong>Paige&lt;/strong> theme.&lt;/p>
+&lt;h3 id="objective">Objective:&lt;/h3>
+&lt;p>To create an online space to present myself more completely than a traditional CV, showing work and educational experiences, personal projects, interests, and skills in a dynamic and authentic way.&lt;/p>
+&lt;h3 id="technologies-and-tools-used">Technologies and Tools Used:&lt;/h3>
+&lt;ul>
+&lt;li>&lt;strong>Static Site Generator:&lt;/strong> Hugo (v0.141.0 Extended)&lt;/li>
+&lt;li>&lt;strong>Theme:&lt;/strong> Paige (integrated as a Git Submodule)&lt;/li>
+&lt;li>&lt;strong>Content Language:&lt;/strong> Markdown with TOML Front Matter&lt;/li>
+&lt;li>&lt;strong>Hosting:&lt;/strong> GitHub Pages (configured for free deployment)&lt;/li>
+&lt;li>&lt;strong>Automatic Deployment:&lt;/strong> GitHub Actions (custom workflow with &lt;code>peaceiris/actions-gh-pages&lt;/code> for build and push to &lt;code>gh-pages&lt;/code> branch)&lt;/li>
+&lt;li>&lt;strong>Build Dependencies:&lt;/strong> Dart Sass (installed in the Actions workflow to compile the theme&amp;rsquo;s SCSS)&lt;/li>
+&lt;li>&lt;strong>Version Control:&lt;/strong> Git and GitHub&lt;/li>
+&lt;li>&lt;strong>&lt;code>Analytics: Google Analytics (GA4) for monitoring visits and user behavior.&lt;/code>&lt;/strong>&lt;/li>
+&lt;/ul>
+&lt;h3 id="what-i-learned-and-challenges-overcome">What I Learned and Challenges Overcome:&lt;/h3>
+&lt;p>This project has been an excellent training ground for delving into various aspects of web development and modern workflow:&lt;/p></description></item><item><title>Sito Personale con Framework Hugo</title><link>https://modernage12.github.io/lorenzosnotes/it/it/progetti/sito_personale_hugo/</link><pubDate>Sun, 27 Apr 2025 13:55:00 +0200</pubDate><guid>https://modernage12.github.io/lorenzosnotes/it/it/progetti/sito_personale_hugo/</guid><description>&lt;p>Questo è il progetto di creazione e sviluppo continuo del mio sito/portfolio personale, lo spazio digitale in cui ti trovi ora! È stato costruito utilizzando il generatore di siti statici &lt;strong>Hugo&lt;/strong> e il tema &lt;strong>Paige&lt;/strong>.&lt;/p>
+&lt;h3 id="obiettivo">Obiettivo:&lt;/h3>
+&lt;p>Creare uno spazio online per presentarmi in modo più completo rispetto a un CV tradizionale, mostrando esperienze lavorative e formative, progetti personali, interessi e competenze in modo dinamico e autentico.&lt;/p>
+&lt;h3 id="tecnologie-e-strumenti-utilizzati">Tecnologie e Strumenti Utilizzati:&lt;/h3>
+&lt;ul>
+&lt;li>&lt;strong>Generatore Sito Statico:&lt;/strong> Hugo (v0.141.0 Extended)&lt;/li>
+&lt;li>&lt;strong>Tema:&lt;/strong> Paige (integrato come Git Submodule)&lt;/li>
+&lt;li>&lt;strong>Linguaggio Contenuti:&lt;/strong> Markdown con Front Matter TOML&lt;/li>
+&lt;li>&lt;strong>Hosting:&lt;/strong> GitHub Pages (configurato per deployment gratuito)&lt;/li>
+&lt;li>&lt;strong>Deployment Automatico:&lt;/strong> GitHub Actions (workflow custom con &lt;code>peaceiris/actions-gh-pages&lt;/code> per build e push su branch &lt;code>gh-pages&lt;/code>)&lt;/li>
+&lt;li>&lt;strong>Dipendenze Build:&lt;/strong> Dart Sass (installato nel workflow Actions per compilare SCSS del tema)&lt;/li>
+&lt;li>&lt;strong>Controllo Versione:&lt;/strong> Git e GitHub&lt;/li>
+&lt;li>&lt;strong>&lt;code>Analytics: Google Analytics (GA4) per il monitoraggio delle visite e del comportamento utente.&lt;/code>&lt;/strong>&lt;/li>
+&lt;/ul>
+&lt;h3 id="cosa-ho-imparato-e-sfide-superate">Cosa ho Imparato e Sfide Superate:&lt;/h3>
+&lt;p>Questo progetto è stato un’ottima palestra per approfondire diversi aspetti dello sviluppo web e del workflow moderno:&lt;/p></description></item><item><title>Finally, a Blog!</title><link>https://modernage12.github.io/lorenzosnotes/it/en/blog/mio-primo-articolo/</link><pubDate>Sun, 27 Apr 2025 17:35:00 +0200</pubDate><guid>https://modernage12.github.io/lorenzosnotes/it/en/blog/mio-primo-articolo/</guid><description>&lt;p>This is officially the first article of my new personal blog.&lt;/p>
+&lt;p>I&amp;rsquo;ve been thinking for a while about opening a space to share more structured thoughts compared to a social media post.&lt;/p>
+&lt;h2 id="what-will-i-talk-about">What Will I Talk About?&lt;/h2>
+&lt;p>Mainly about:&lt;/p>
+&lt;ul>
+&lt;li>Marketing and Strategy&lt;/li>
+&lt;li>Practical applications of AI&lt;/li>
+&lt;li>Tools and Technologies I discover and find interesting&lt;/li>
+&lt;li>Reflections on learning, readings, etc.&lt;/li>
+&lt;li>(Maybe) Trading&lt;/li>
+&lt;li>Ideas, future projects, etc.&lt;/li>
+&lt;/ul>
+&lt;p>I hope you find something useful or interesting!&lt;/p></description></item><item><title>Finalmente un Blog!</title><link>https://modernage12.github.io/lorenzosnotes/it/it/blog/mio-primo-articolo/</link><pubDate>Sun, 27 Apr 2025 17:35:00 +0200</pubDate><guid>https://modernage12.github.io/lorenzosnotes/it/it/blog/mio-primo-articolo/</guid><description>&lt;p>Questo è ufficialmente il primo articolo del mio nuovo blog personale.&lt;/p>
+&lt;p>È da un po&amp;rsquo; che pensavo di aprire uno spazio per condividere pensieri più strutturati rispetto a un post sui social.&lt;/p>
+&lt;h2 id="di-cosa-parlerò">Di Cosa Parlerò?&lt;/h2>
+&lt;p>Principalmente di:&lt;/p>
+&lt;ul>
+&lt;li>Marketing e Strategia&lt;/li>
+&lt;li>Applicazioni pratiche dell&amp;rsquo;AI&lt;/li>
+&lt;li>Tool e Tecnologie che scopro e mi interessano&lt;/li>
+&lt;li>Riflessioni sull&amp;rsquo;apprendimento, letture, etc.&lt;/li>
+&lt;li>(Forse) Trading&lt;/li>
+&lt;li>Idee, progetti futuri, etc.&lt;/li>
+&lt;/ul>
+&lt;p>Spero troviate qualcosa di utile o interessante!&lt;/p></description></item></channel></rss>

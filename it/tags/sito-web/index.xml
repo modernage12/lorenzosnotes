@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Sito Web on</title><link>https://modernage12.github.io/lorenzosnotes/it/tags/sito-web/</link><description>Recent content in Sito Web on</description><generator>Hugo</generator><language>it</language><lastBuildDate>Sun, 27 Apr 2025 13:55:00 +0200</lastBuildDate><atom:link href="https://modernage12.github.io/lorenzosnotes/it/tags/sito-web/index.xml" rel="self" type="application/rss+xml"/><item><title>Sito Personale con Framework Hugo</title><link>https://modernage12.github.io/lorenzosnotes/it/it/progetti/sito_personale_hugo/</link><pubDate>Sun, 27 Apr 2025 13:55:00 +0200</pubDate><guid>https://modernage12.github.io/lorenzosnotes/it/it/progetti/sito_personale_hugo/</guid><description>&lt;p>Questo è il progetto di creazione e sviluppo continuo del mio sito/portfolio personale, lo spazio digitale in cui ti trovi ora! È stato costruito utilizzando il generatore di siti statici &lt;strong>Hugo&lt;/strong> e il tema &lt;strong>Paige&lt;/strong>.&lt;/p>
+&lt;h3 id="obiettivo">Obiettivo:&lt;/h3>
+&lt;p>Creare uno spazio online per presentarmi in modo più completo rispetto a un CV tradizionale, mostrando esperienze lavorative e formative, progetti personali, interessi e competenze in modo dinamico e autentico.&lt;/p>
+&lt;h3 id="tecnologie-e-strumenti-utilizzati">Tecnologie e Strumenti Utilizzati:&lt;/h3>
+&lt;ul>
+&lt;li>&lt;strong>Generatore Sito Statico:&lt;/strong> Hugo (v0.141.0 Extended)&lt;/li>
+&lt;li>&lt;strong>Tema:&lt;/strong> Paige (integrato come Git Submodule)&lt;/li>
+&lt;li>&lt;strong>Linguaggio Contenuti:&lt;/strong> Markdown con Front Matter TOML&lt;/li>
+&lt;li>&lt;strong>Hosting:&lt;/strong> GitHub Pages (configurato per deployment gratuito)&lt;/li>
+&lt;li>&lt;strong>Deployment Automatico:&lt;/strong> GitHub Actions (workflow custom con &lt;code>peaceiris/actions-gh-pages&lt;/code> per build e push su branch &lt;code>gh-pages&lt;/code>)&lt;/li>
+&lt;li>&lt;strong>Dipendenze Build:&lt;/strong> Dart Sass (installato nel workflow Actions per compilare SCSS del tema)&lt;/li>
+&lt;li>&lt;strong>Controllo Versione:&lt;/strong> Git e GitHub&lt;/li>
+&lt;li>&lt;strong>&lt;code>Analytics: Google Analytics (GA4) per il monitoraggio delle visite e del comportamento utente.&lt;/code>&lt;/strong>&lt;/li>
+&lt;/ul>
+&lt;h3 id="cosa-ho-imparato-e-sfide-superate">Cosa ho Imparato e Sfide Superate:&lt;/h3>
+&lt;p>Questo progetto è stato un’ottima palestra per approfondire diversi aspetti dello sviluppo web e del workflow moderno:&lt;/p></description></item></channel></rss>
