@@ -12,6 +12,8 @@ Quando si avvia una nuova attività, soprattutto una dinamica come un'agenzia di
 
 Dopo aver valutato diverse opzioni, la scelta è ricaduta su **Notion**. La sua flessibilità, la possibilità di creare database personalizzati e interconnessi, e la sua natura collaborativa lo rendevano lo strumento ideale per costruire una base operativa solida e scalabile per la nostra nascente agenzia. In questo articolo, voglio condividere il processo di pensiero e la struttura che stiamo implementando per la nostra dashboard operativa.
 
+Inoltre, grazie ad un [articolo sugli errori princiapli nella creazioni di Workspace in Notion](https://athing.webnode.page/l/i-5-errori-che-ho-fatto-creando-il-mio-primo-workspace-in-notion/) che abbiamo trovato online (consiglio di leggerlo, è davvero ottimo), eravamo anche armati delle migliori best practice. 
+
 ## Filosofia e Obiettivi del Nostro Workspace Notion
 
 Prima di tuffarci nella creazione di pagine e database, abbiamo definito alcuni obiettivi chiave per il nostro sistema Notion:
