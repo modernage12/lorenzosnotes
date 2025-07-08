@@ -1,6 +1,6 @@
 +++
 title = "Come Stiamo Organizzando Officina Digitale: la Nostra Dashboard Operativa in Notion"
-date = 2025-05-14T13:00:00+02:00 # Data di pubblicazione del post
+date = 2025-07-08T08:00:00+02:00 # Data di pubblicazione del post
 draft = false
 tags = ["Notion", "Produttività", "Organizzazione Aziendale", "Agenzia Marketing", "Project Management", "Tool"]
 # featured_image = "/images/blog/notion-dashboard/notion_hero.jpg" # Opzionale: se hai un'immagine per il post
